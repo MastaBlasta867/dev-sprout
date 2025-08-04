@@ -1,0 +1,65 @@
+/* 1️⃣ Set up the root colors and font */
+:root {
+  --light-blue: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-primary: 'Outfit', sans-serif;
+}
+
+/* 2️⃣ Reset default browser styles and apply font */
+* {
+  box-sizing: border-box; /* makes width include padding */
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+}
+
+/* 3️⃣ Full-page background and centering the card */
+body {
+  background-color: var(--light-blue); /* soft blue background */
+  height: 100vh; /* takes full viewport height */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+/* 4️⃣ Container for our content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 5️⃣ The card itself */
+.card {
+  background-color: var(--white); /* white background */
+  border-radius: 20px; /* rounded corners */
+  max-width: 320px; /* fixed size */
+  padding: 20px; /* inner spacing */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* soft shadow for depth */
+  text-align: center; /* center text */
+}
+
+/* 6️⃣ QR code image */
+.card img {
+  width: 100%; /* fills the card width */
+  border-radius: 10px; /* rounded image corners */
+  margin-bottom: 20px;
+}
+
+/* 7️⃣ Title styling */
+.card h1 {
+  font-size: 1.25rem;
+  font-weight: 700; /* bold */
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+/* 8️⃣ Paragraph styling */
+.card p {
+  font-size: 1rem;
+  font-weight: 400; /* regular weight */
+  color: var(--gray-blue);
+}
