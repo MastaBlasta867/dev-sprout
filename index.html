@@ -4,17 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QR Code Component</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: hsl(212, 45%, 89%);
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h1 {
+      font-size: 22px;
+      margin: 20px 0 10px;
+      color: hsl(218, 44%, 22%);
+    }
+    .card p {
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <div class="card">
-      <img src="images/image-qr-code.png" alt="QR code" />
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-    <script src="main.js"></script>
-  </main>
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/Front-End-MentorChallenges/QR-code-component/main/images/image-qr-code.png" alt="QR Code" />
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
 </body>
 </html>
